@@ -1,9 +1,8 @@
-const Search=()=>{
-    return(
+const Dashboard = () => {
+    return (
         <div>
-            <h1>Search Page</h1>
+            <h1>Dashboard Page</h1>
         </div>
     );
-
 }
-export default Search;
+export default Dashboard;
