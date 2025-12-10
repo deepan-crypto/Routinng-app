@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom/client';
 import { CreateBrowserRouter,RouterProvider } from 'react-router-dom';
 import Home from './pages/Home.js';
 import App from './App.jsx';
-import Search from './pages/Search.js';
-import About from './pages/About.js';
-import Cart from './pages/Cart.js';
+import Search from './pages/DashBoard.js';
+import About from './pages/Userprofile.js';
+import Cart from './pages/AddPlant.js';
 import './index.css';
 
 
