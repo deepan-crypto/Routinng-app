@@ -4,8 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [val, setVal] = useState(0); 
+  
+  let [val, setVal] = useState(0); 
+  
+   let [data, setData]=useState([]);
 
   useEffect(() => {
     console.log("UseEffect-Run Once after initial Render");
@@ -27,10 +29,26 @@ function App() {
     }
   }, [val]); 
 
+  useEffect(() => {
+    const FetchApi=async()=>{
+      try{
+        const response=await fetch('https://jsonplaceholder.typicode.com/users');
+      
+        const fetchData=await response.json();
+        setData(fetchData);
+        
+      }catch(err)
+      {
+        console.log("Error:", err);
+      }
+    }
+});
+
   //CleanUP Function 
   return () => {
     clearTimeout(timer);
   }
+
 
   return (
     <div className="App">
