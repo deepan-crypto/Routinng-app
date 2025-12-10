@@ -8,7 +8,7 @@ import Home from "./pages/Home.js";
 import DashBoard from "./pages/DashBoard.js";
 import AddPlant from "./pages/AddPlant.js";
 import PlantDetails from "./pages/PlantDetails.js";
-import ActivityHistory from "./pages/ActiveHistory.js";
+import ActivityHistory from "./pages/ActivityHistory.js";
 import Reminders from "./pages/Reminders.js";
 import UserProfile from "./pages/Userprofile.js";
 
