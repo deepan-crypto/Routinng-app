@@ -42,7 +42,8 @@ function App() {
         console.log("Error:", err);
       }
     }
-});
+    FetchApi();
+  }, []); // Added missing dependency array
 
   //CleanUP Function 
   return () => {
@@ -53,28 +54,31 @@ function App() {
   return (
     <div className="App">
       <h1>Learning react</h1>
+      {/* Uncomment or define the Counter component if needed */}
       <Counter 
-      val={val}
-      handleDecrement={handleDecrement}
-      handleIncrement={handleIncrement}  />
+        val={val}
+        handleDecrement={handleDecrement}
+        handleIncrement={handleIncrement} 
+      /> 
+      <table>
+        <thead>
           <tr>
             <th>Name</th>
-            <th>Email</th
+            <th>Email</th>
 
             <th>Phone</th>
           </tr>
-          </thead>
-          <body>
-            {data.map(item)=>(
-          return(
-            <tr key={item.id}>
+        </thead>
+        <tbody>
+          {data.map((item) => (
+          <tr key={item.id}>
             <td>{item.name}</td>
             <td>{item.email}</td>
             <td>{item.phone}</td> 
-          );
-          }
-          </body>
-
+          </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
 
   );
