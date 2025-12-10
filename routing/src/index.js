@@ -35,6 +35,10 @@ const routerVariables=CreateBrowserRouter([
         element:<Cart/>
 
     },
+    {
+        path:"*",
+        element:<h1>404 Page Not Found Please Check your URL</h1>,
+    },
 ],
 },
 ],
