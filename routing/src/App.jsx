@@ -8,6 +8,14 @@ function App() {
   let [val, setVal] = useState(0); 
   
    let [data, setData]=useState([]);
+   let handleIncrement=()=>
+   {
+    setVal(val+1);
+
+   }
+   let handleDecrement=()=>{
+    setVal(val-1);
+   }
 
   useEffect(() => {
     console.log("UseEffect-Run Once after initial Render");
