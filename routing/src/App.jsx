@@ -53,6 +53,13 @@ function App() {
     FetchApi();
   }, []); // Added missing dependency array
 
+  useEffect(()=>{
+    const FetchApi=async()=>{
+      try{
+        const response=await fetch("https://jsonplaceholder.typicode.com/users");
+      }
+    }
+  });
   //CleanUP Function 
   return () => {
     clearTimeout(timer);
