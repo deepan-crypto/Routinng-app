@@ -67,11 +67,11 @@ function App() {
           <body>
             {data.map(item)=>(
           return(
-            <tr key
+            <tr key={item.id}>
             <td>{item.name}</td>
             <td>{item.email}</td>
             <td>{item.phone}</td> 
-          )  
+          );
           }
           </body>
 
