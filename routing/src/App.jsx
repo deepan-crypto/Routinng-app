@@ -57,9 +57,26 @@ function App() {
       val={val}
       handleDecrement={handleDecrement}
       handleIncrement={handleIncrement}  />
+          <tr>
+            <th>Name</th>
+            <th>Email</th
 
-      
+            <th>Phone</th>
+          </tr>
+          </thead>
+          <body>
+            {data.map(item)=>(
+          return(
+            <tr key
+            <td>{item.name}</td>
+            <td>{item.email}</td>
+            <td>{item.phone}</td> 
+          )  
+          }
+          </body>
+
     </div>
+
   );
 }
 
