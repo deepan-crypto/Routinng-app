@@ -27,6 +27,11 @@ function App() {
     }
   }, [val]); 
 
+  //CleanUP Function 
+  return () => {
+    clearTimeout(timer);
+  }
+
   return (
     <div className="App">
       <h1>Learning react</h1>
