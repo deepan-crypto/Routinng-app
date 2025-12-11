@@ -17,14 +17,37 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/dashboard", element: <DashBoard /> },
-      { path: "/addplant", element: <AddPlant /> },
-      { path: "/plantdetails", element: <PlantDetails /> },
-      { path: "/history", element: <ActivityHistory /> },
-      { path: "/reminders", element: <Reminders /> },
-      { path: "/userprofile", element: <UserProfile /> },
-      { path: "/dashboard/:res", element: <DashBoard /> }, // fixed param route and typo
+      { 
+        path: "/",
+         element: <Home /> 
+        },
+      {
+         path: "/dashboard", 
+         element: <DashBoard /> 
+        },
+      { 
+        path: "/addplant", 
+        element: <AddPlant /> 
+      },
+      { 
+        path: "/plantdetails", 
+        element: <PlantDetails />
+       },
+      { 
+        path: "/history",
+         element: <ActivityHistory /> 
+        },
+      { 
+        path: "/reminders",
+         element: <Reminders />
+         },
+      {
+         path: "/userprofile", 
+         element: <UserProfile /> 
+        },
+      { 
+        path: "/dashboard/:res",
+         element: <DashBoard /> }, 
       {
         path: "*",
         element: <h1>404 Page Not Found. Please check your URL.</h1>,
