@@ -1,9 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import App from "./App.jsx";
-
 import Home from "./pages/Home.js";
 import DashBoard from "./pages/DashBoard.js";
 import AddPlant from "./pages/AddPlant.js";
@@ -26,6 +24,7 @@ const router = createBrowserRouter([
       { path: "/history", element: <ActivityHistory /> },
       { path: "/reminders", element: <Reminders /> },
       { path: "/userprofile", element: <UserProfile /> },
+      {path: "/dashboard/{res}",elemet: <DashBoard />},
 
      
       {
