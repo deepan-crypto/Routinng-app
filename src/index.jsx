@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
-import Home from "./pages/Home.jsx";
 import DashBoard from "./pages/DashBoard.jsx";
 import AddPlant from "./pages/AddPlant.jsx";
 import PlantDetails from "./pages/PlantDetails.jsx";
@@ -17,12 +16,8 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      { 
-        path: "/",
-         element: <Home /> 
-        },
       {
-         path: "/dashboard", 
+         path: "/", 
          element: <DashBoard /> 
         },
       { 
@@ -45,9 +40,6 @@ const router = createBrowserRouter([
          path: "/userprofile", 
          element: <UserProfile /> 
         },
-      { 
-        path: "/dashboard/:res",
-         element: <DashBoard /> }, 
       {
         path: "*",
         element: <h1>404 Page Not Found. Please check your URL.</h1>,
