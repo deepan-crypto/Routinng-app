@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-
 import React from "react";
 import "../Styles/Dashboard.css";
 
@@ -14,7 +13,7 @@ const Dashboard = () => {
         <aside className="left-box">
           <h3>Plants</h3>
 
-          <button className="btn">+ Add Plant</button>
+          <button className="btn">Add Plant</button>
 
           <div className="plant-list">
             <p>No plants added yet.</p>

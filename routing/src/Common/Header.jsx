@@ -7,8 +7,7 @@ const Header = () => {
     <header>
         <img className="logo" src="/plant.png" alt="Plant" />
         <nav>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/dashboard">Dashboard</NavLink>
+          <NavLink to="/">Dashboard</NavLink>
           <NavLink to="/addplant">Add Plant</NavLink>
           <NavLink to="/plantdetails">Plant Details</NavLink>
           <NavLink to="/editplant">Edit Plant</NavLink>
