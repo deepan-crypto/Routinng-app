@@ -50,7 +50,7 @@ const router = createBrowserRouter([
          element: <DashBoard /> }, 
       {
         path: "*",
-        element: <h1>404 Page Not Found. Please check your URL.</h1>,
+        element: <h1>Edit Plant Page.</h1>,
       },
     ],
   },
