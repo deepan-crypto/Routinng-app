@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
-import Home from "./pages/Home.js";
-import DashBoard from "./pages/DashBoard.js";
-import AddPlant from "./pages/AddPlant.js";
-import PlantDetails from "./pages/PlantDetails.js";
-import ActivityHistory from "./pages/ActivityHistory.js";
-import Reminders from "./pages/Reminders.js";
-import UserProfile from "./pages/Userprofile.js";
+import Home from "./pages/Home.jsx";
+import DashBoard from "./pages/DashBoard.jsx";
+import AddPlant from "./pages/AddPlant.jsx";
+import PlantDetails from "./pages/PlantDetails.jsx";
+import ActivityHistory from "./pages/ActivityHistory.jsx";
+import Reminders from "./pages/Reminders.jsx";
+import UserProfile from "./pages/Userprofile.jsx";
 
 import "./index.css";
 
@@ -24,9 +24,7 @@ const router = createBrowserRouter([
       { path: "/history", element: <ActivityHistory /> },
       { path: "/reminders", element: <Reminders /> },
       { path: "/userprofile", element: <UserProfile /> },
-      {path: "/dashboard/{res}",elemet: <DashBoard />},
-
-     
+      { path: "/dashboard/:res", element: <DashBoard /> }, // fixed param route and typo
       {
         path: "*",
         element: <h1>404 Page Not Found. Please check your URL.</h1>,
@@ -41,3 +39,5 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+export { router };
